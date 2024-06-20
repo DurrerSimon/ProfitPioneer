@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="profitpioneer.controllers.PortfolioController" spacing="10">
+    <HBox spacing="10">
+        <LineChart fx:id="portfolioChart" title="Portfolio Value">
+            <xAxis>
+                <CategoryAxis label="Time"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Value (USD)"/>
+            </yAxis>
+        </LineChart>
+    </HBox>
+    <TableView fx:id="portfolioTable">
+        <columns>
+            <TableColumn fx:id="portfolioStockSymbolColumn" text="Symbol"/>
+            <TableColumn fx:id="portfolioStockNameColumn" text="Name"/>
+            <TableColumn fx:id="portfolioStockQuantityColumn" text="Quantity"/>
+            <TableColumn fx:id="portfolioStockValueColumn" text="Value"/>
+            <TableColumn fx:id="portfolioStockChangeColumn" text="24h Change"/>
+        </columns>
+    </TableView>
+</VBox>

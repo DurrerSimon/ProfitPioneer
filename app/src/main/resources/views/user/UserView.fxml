@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="profitpioneer.controllers.UserController" spacing="10">
+    <Label fx:id="usernameLabel" text="Name: "/>
+    <Label fx:id="balanceLabel" text="Available Balance: "/>
+    <Label fx:id="totalAssetsLabel" text="Total Assets: "/>
+</VBox>

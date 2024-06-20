@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="profitpioneer.controllers.MenuBarController">
+    <Menu text="Simulation">
+        <MenuItem text="Exit" fx:id="exitMenuItem" onAction="#handleExit"/>
+    </Menu>
+    <Menu text="Help">
+        <MenuItem text="About" fx:id="aboutItem" onAction="#handleAbout"/>
+        <MenuItem text="Future feature list" fx:id="featureListItem" onAction="#handleFeatureList"/>
+    </Menu>
+</MenuBar>
